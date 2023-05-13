@@ -1,0 +1,58 @@
+@use '../variables' as v;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    font-family: Poppins;
+
+    .container{
+        width: 630px;
+        height: 530px;
+        background-color: v.$White;
+        border-radius: 20px 20px 100px 20px;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        margin-bottom: 40px;
+
+        #upper-section{
+            grid-row: 1;
+            width: 100%;
+            padding: 20px 40px 0px 40px;
+        }
+
+        #lower-section{
+            width: 100%;
+            grid-row: 2;
+            text-align: left;
+            padding: 0px 0px 0px 40px;
+
+            .value{
+                font-size: 80px;
+                line-height: 0.3cm;
+
+                .date-number{
+                    color: v.$Purple;
+                }
+            }
+        }
+
+        @media (max-width: 700px) {
+            width: 350px;
+            height: 500px;
+            grid-template-rows: 1fr 2fr;
+
+            #upper-section{
+                padding: 40px 20px 0px 20px;
+            }
+
+            #lower-section{
+                padding: 20px 20px 0px 30px;
+                .value{
+                    font-size: 55px;
+                }
+            }
+        }
+    }
+}
