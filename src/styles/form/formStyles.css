@@ -13,6 +13,7 @@
 .form .inputs .form-section .error-message {
   color: hsl(0, 100%, 67%);
   font-size: 12px;
+  align-self: flex-start;
 }
 .form .inputs .form-section label {
   font-size: 11px;
@@ -74,6 +75,9 @@
   }
   .form .inputs .form-section {
     padding-bottom: 20px;
+  }
+  .form .inputs .form-section .error-message {
+    font-size: 8px;
   }
   .form .inputs .form-section .input {
     width: 80px;

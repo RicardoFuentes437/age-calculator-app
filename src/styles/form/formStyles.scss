@@ -13,6 +13,7 @@
             .error-message{
                 color: v.$Light-red;
                 font-size: 12px;
+                align-self: flex-start;
             }
 
             label{
@@ -86,6 +87,11 @@
             padding-right: 40px;
             .form-section{
                 padding-bottom: 20px;
+
+                .error-message{
+                    font-size: 8px;
+                }
+
                 .input{
                     width: 80px;
                     font-size: 24px;
